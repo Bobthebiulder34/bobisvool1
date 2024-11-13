@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="media/dnd2.png" alt="bob" width=500px> 
+    <h1>Ask about countries:</h1>
+
+    <!-- Country Dropdown -->
+    <label for="countries">Choose a country:</label>
+    <select id="countries" name="countries">
+        <option value="null">Select a country</option>
+        <option value="Kud">Kud</option>
+        <option value="Republic of Cheth">Republic of Cheth</option>
+        <option value="Protectorate of Deloragh">Protectorate of Deloragh</option>
+        <option value="Kingdom of Zraz">Kingdom of Zraz</option>
+        <option value="Kingdom of Schi">Kingdom of Schi</option>
+        <option value="Principality of Hlyterius">Principality of Hlyterius</option>
+        <option value="Kingdom of Lilaurathan">Kingdom of Lilaurathan</option>
+        <option value="Ulus of Chandia">Ulus of Chandia</option>
+        <option value="Khanate of Shar">Khanate of Shar</option>
+        <option value="Thearchy of Kilnarg">Thearchy of Kilnarg</option>
+        <option value="Protectorate of Snaken">Protectorate of Snaken</option>
+        <option value="Faharond">Faharond</option>
+        <option value="Dhod">Dhod</option> <!-- Added Dhod -->
+    </select>
+    
+
+    <br>
+
+    <!-- Category Dropdown -->
+    <label for="info">Choose a category:</label>
+    <select id="info" name="info">
+        <option value="null">Select a category</option>
+        <option value="overview">Overview</option>
+        <option value="geography">Geography</option>
+        <option value="culture">Culture</option>
+        <option value="political_stance">Political Stance</option>
+    </select>
+
+    <br>
+
+    <!-- Button to submit selections -->
+    <button id="submitBtn">Submit</button>
+
+    <!-- Display result here -->
+    <div id="resultDisplay" style="margin-top: 20px; font-weight: bold;"></div>
+
+    <script src="thing.js"></script>
+</body>
+</html>

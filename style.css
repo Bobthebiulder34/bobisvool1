@@ -1,0 +1,74 @@
+/* styles.css */
+
+/* Basic reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-height flexbox to center content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive image with a maximum width */
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Center the select elements, labels, and button in a column */
+label, select, button, h1, #resultDisplay {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Style the button */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Make font size and layout scale for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    label, select, button, #resultDisplay {
+        font-size: 0.9rem;
+    }
+    
+    button {
+        max-width: 150px;
+    }
+}
+
+/* Additional scaling for very large screens */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    label, select, button, #resultDisplay {
+        font-size: 1.2rem;
+    }
+    
+    button {
+        max-width: 250px;
+    }
+}
